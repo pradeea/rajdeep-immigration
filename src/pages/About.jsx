@@ -37,13 +37,12 @@ export default function About() {
       <section className="py-24">
         <Container className="grid gap-16 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <div className="mx-auto flex aspect-square w-full max-w-sm items-center justify-center rounded-full border border-gold-400/30 bg-gradient-to-br from-navy-900 to-navy-950">
-              <span className="font-display text-7xl font-semibold text-gold-400">
-                {business.founder
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
-              </span>
+            <div className="mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full border border-gold-400/30 bg-gradient-to-br from-navy-900 to-navy-950">
+              <img
+                src="/images/rajdeep-kaur.jpg"
+                alt={business.founder}
+                className="h-full w-full object-cover"
+              />
             </div>
           </Reveal>
 
