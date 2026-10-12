@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ChatWidget from "./components/ChatWidget";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -32,7 +31,6 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-      <ChatWidget />
     </div>
   );
 }
